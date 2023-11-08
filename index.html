@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Main-page</title>
@@ -151,6 +152,39 @@
                 </div>
             </div>
         </section>
+        <section class="stock">
+            <div class="swiper stock-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide stock-card triangle-red">
+                        <h2 class="stock-card-title">Квартирный <br> <span class="white">переезд</span></h2>
+                        <p class="stock-card-descr big">от 200 руб</p>
+                        <img class="slide-img" src="img/index/stock/slide-1.svg" alt="">
+                    </div>
+                    <div class="swiper-slide stock-card triangle-black">
+                        <h2 class="stock-card-title">Счастливые часы</h2>
+                        <p class="stock-card-descr small">в будни с 10 до 15</p>
+                        <p class="stock-card-descr medium">скидка 10%</p>
+                        <img class="slide-img" src="img/index/stock/slide-2.svg" alt="">
+                    </div>
+                    <div class="swiper-slide stock-card triangle-white">
+                        <h2 class="stock-card-title">Повторный заказ <br> <span class="red">со скидкой 15%</span></h2>
+                        <img class="slide-img" src="img/index/stock/slide-3.svg" alt="">
+                    </div>
+                    <div class="swiper-slide stock-card triangle-white">
+                        <h2 class="stock-card-title">Грузчики включены в стоимость</h2>
+                        <img class="slide-img" src="img/index/stock/slide-4.svg" alt="">
+                    </div>
+                    <div class="swiper-slide stock-card triangle-red">
+                        <h2 class="stock-card-title">Бесплатная <span class="white">страховка груза</span></h2>
+                        <img class="slide-img" src="img/index/stock/slide-5.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <img class="swiper-left navigation-btn" src="img/slider/arrow-left.svg" alt="arow icon">
+                <img class="swiper-right navigation-btn" src="img/slider/arrow-right.svg" alt="arow icon">
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -228,6 +262,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/phonemask.js"></script>

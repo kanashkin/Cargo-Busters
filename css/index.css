@@ -1,3 +1,5 @@
+/* PROMO SECTION */
+
 .promo {
     padding: 80px 0 72px;
     background: url(../img/index/promo/bg.png);
@@ -229,4 +231,88 @@
 
 .phone-code-input {
     width: 32px;
+}
+
+/* STOCK SECTION */
+
+.stock {
+    padding: 80px 0 40px;
+    background: #EEE;
+}
+
+.stock-swiper {
+    height: 448px;
+    max-width: 1567px;
+    margin: 0 0 0 auto;
+}
+
+.stock-card {
+    border-radius: 20px;
+    border: 1px solid #303030;
+    background-color: #EEE;
+    padding: 40px;
+    position: relative;
+    background-position: center top 75px;
+    background-repeat: no-repeat;
+    max-width: 398px !important;
+    width: 100% !important;
+    height: 100%;
+    overflow: hidden;
+}
+
+.stock-card.triangle-red {
+    background-image: url(../img/index/stock/triangle-red.png);
+}
+
+.stock-card.triangle-black {
+    background-image: url(../img/index/stock/triangle-black.png);
+}
+
+.stock-card.triangle-white {
+    background-image: url(../img/index/stock/triangle-white.png);
+}
+
+.stock-card-title {
+    color: #161616;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.stock-card-title .white {
+    color: #FEFEFE;
+}
+
+.stock-card-title .red {
+    color: #C21B22;
+}
+
+.stock-card-descr {
+    margin-top: 8px;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.stock-card-descr.big {
+    font-size: 40px;
+}
+
+.stock-card-descr.medium {
+    font-size: 32px;
+}
+
+.stock-card-descr.small {
+    font-size: 24px;
+}
+
+.slide-img {
+    position: absolute;
+    border-radius: 50%;
+    left: -26%;
+    bottom: -32%;
 }

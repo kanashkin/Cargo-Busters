@@ -78,6 +78,17 @@ span {
     line-height: 110%;
 }
 
+.navigation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation-btn {
+    cursor: pointer;
+}
+
 
 /* HEADER */
 

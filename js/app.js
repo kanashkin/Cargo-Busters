@@ -50,3 +50,13 @@ const calc = () => {
 }
 
 calc()
+
+const stockSwiper = new Swiper('.stock-swiper', {
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 4,
+    navigation: {
+        nextEl: '.swiper-right',
+        prevEl: '.swiper-left',
+    },
+})
