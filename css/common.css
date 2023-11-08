@@ -70,6 +70,14 @@ span {
     gap: 7px;
 }
 
+.title {
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
 
 /* HEADER */
 
