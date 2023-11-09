@@ -574,6 +574,7 @@
 
 .auto-circle.white {
     background: #FEFEFE;
+    border: 1px solid #EEE;
     top: -10px;
     right: 232px;
     z-index: 3;
@@ -622,4 +623,56 @@
 
 .auto-circle-descr.white {
     color: #FEFEFE;
+}
+
+/* LOADER-COAST SECTION */
+
+.loader-coast {
+    padding-top: 80px;
+    height: 794px;
+}
+
+.loader-coast .container {
+    height: 100%;
+}
+
+.loader-coast-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.loader__info {
+    margin: 80px 0 0 103px;
+}
+
+.loader__circle {
+    border-radius: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+
+.loader__circle.black {
+    background: #303030;
+    border: 1px solid #EEE;
+    position: relative;
+    z-index: 2;
+}
+
+.loader__circle.red {
+    background: #C21B22;
+    margin-top: -78px;
+    margin-left: 80px;
+}
+
+.loader__circle-value {
+    color: #FEFEFE;
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 110%;
 }
