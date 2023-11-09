@@ -242,8 +242,6 @@
 
 .stock-swiper {
     height: 448px;
-    max-width: 1567px;
-    margin: 0 0 0 auto;
 }
 
 .stock-card {
@@ -367,6 +365,7 @@
 .services-card {
     border-radius: 20px;
     max-width: 33.33333%;
+    width: 100%;
 }
 
 .services-card-img {
@@ -458,4 +457,169 @@
     max-width: fit-content;
     display: block;
     margin: 0 auto;
+}
+
+/* AUTO BLOCK */
+
+.auto {
+    padding-bottom: 40px;
+    background: #EEE;
+}
+
+.auto-title {
+    padding-top: 76px;
+}
+
+.auto-swiper {
+    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.auto-card {
+    padding: 40px 20px;
+    border-radius: 20px;
+    border: 2px solid #303030;
+    background: #FEFEFE;
+    max-width: 398px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.auto-card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 82px;
+}
+
+.card-top-text {
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.auto-card-title {
+    color: #303030;
+}
+
+.auto-card-volume {
+    border-radius: 20px;
+    background: #EEE;
+    padding: 10px 20px;
+    color: #C21B22;
+}
+
+.auto-card-photo {
+    max-width: 332px;
+    max-height: 150px;
+}
+
+.auto-card-weight {
+    font-family: 'Play', sans-serif;
+    padding: 10px 20px;
+    color: #303030;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.auto-card-price__block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-text {
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.price-from {
+    color: #FEFEFE;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #303030;
+}
+
+.price-km {
+    color: #303030;
+}
+
+.auto__info {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.auto-circle {
+    border-radius: 500px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+}
+
+.auto-circle.white {
+    background: #FEFEFE;
+    top: -10px;
+    right: 232px;
+    z-index: 3;
+}
+
+.auto-circle.red {
+    background: #C21B22;
+    right: 0;
+    top: -38px;
+}
+
+.auto-circle-title {
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    text-align: center;
+}
+
+.auto-circle-title span {
+    font-size: 60px;
+}
+
+.auto-circle-title.black {
+    color: #303030;
+}
+
+.auto-circle-title.white {
+    color: #FEFEFE;
+}
+
+.auto-circle-descr {
+    color: #161616;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 197px;
+}
+
+.auto-circle-descr.black {
+    color: #161616;
+}
+
+.auto-circle-descr.white {
+    color: #FEFEFE;
 }

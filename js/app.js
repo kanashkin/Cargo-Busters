@@ -56,8 +56,17 @@ const stockSwiper = new Swiper('.stock-swiper', {
     loop: true,
     slidesPerView: 4,
     navigation: {
-        nextEl: '.swiper-right',
-        prevEl: '.swiper-left',
+        nextEl: '.stock-swiper-right',
+        prevEl: '.stock-swiper-left',
+    },
+})
+const autoSwiper = new Swiper('.auto-swiper', {
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 4,
+    navigation: {
+        nextEl: '.auto-swiper-right',
+        prevEl: '.auto-swiper-left',
     },
 })
 
