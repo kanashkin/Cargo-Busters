@@ -316,3 +316,146 @@
     left: -26%;
     bottom: -32%;
 }
+
+/* SERVICES SECTION */
+
+.services {
+    padding: 80px 0;
+    background: #FEFEFE;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services__tabs {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.services-tab {
+    padding: 20px 40px;
+    border-radius: 40px;
+    background: #EEE;
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 105%;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.services-tab.active {
+    background: #303030;
+    color: #FEFEFE;
+}
+
+.services-content__block {
+    margin-top: 40px;
+    display: none;
+    gap: 10px;
+}
+
+.services-content__block.active {
+    display: flex;
+}
+
+.services-card {
+    border-radius: 20px;
+    max-width: 33.33333%;
+}
+
+.services-card-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.services-card-title__block {
+    margin-top: -50px;
+    position: relative;
+    z-index: 4;
+    border-radius: 20px 20px 0px 0px;
+    background: #FAFAFA;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.services-card-title {
+    color: #303030;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.services-card__content {
+    border-radius: 0 0 20px 20px;
+    background: #EEE;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-card-price {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #C21B22;
+    color: #FEFEFE;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+    max-width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.services-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.services-card__list-item {
+    height: 30px;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-left: 34px;
+    position: relative;
+}
+
+.services-card__list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/index/services/card-point.svg);
+}
+
+.services-card-btn {
+    border-radius: 60px;
+    background: #303030;
+    padding: 0 30px;
+    height: 47px;
+    color: #FEFEFE;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 105%;
+    max-width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
