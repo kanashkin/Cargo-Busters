@@ -69,6 +69,15 @@ const autoSwiper = new Swiper('.auto-swiper', {
         prevEl: '.auto-swiper-left',
     },
 })
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 4,
+    navigation: {
+        nextEl: '.reviews-swiper-right',
+        prevEl: '.reviews-swiper-left',
+    },
+})
 
 const servicesTabs = () => {
     const triggerBtns = document.querySelectorAll('.services-tab')
