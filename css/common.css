@@ -96,6 +96,21 @@ span {
     margin: 0 0 0 auto;
 }
 
+.phone-input,
+.phone-input::placeholder {
+    color: hsla(0, 0%, 9%, .4) !important;
+}
+
+.phone-input-block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phone-code-input {
+    width: 32px;
+}
+
 
 /* HEADER */
 

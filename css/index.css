@@ -218,21 +218,6 @@
     text-align: center;
 }
 
-.phone-input,
-.phone-input::placeholder {
-    color: hsla(0, 0%, 9%, .4);
-}
-
-.phone-input-block {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.phone-code-input {
-    width: 32px;
-}
-
 /* STOCK SECTION */
 
 .stock {
