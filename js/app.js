@@ -93,3 +93,16 @@ const servicesTabs = () => {
 }
 
 servicesTabs()
+
+const collapse = () => {
+    const triggerBtns = document.querySelectorAll('.collapse__block-trigger')
+
+    triggerBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            const currentBlock = item.closest('.collapse__block')
+            currentBlock.classList.toggle('active')
+        })
+    })
+}
+
+collapse()
