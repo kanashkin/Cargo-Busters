@@ -2,6 +2,10 @@
     background: #161616;
 }
 
+.consultation .container {
+    position: relative;
+}
+
 .consultation.black {
     color: #FEFEFE;
 }
@@ -52,7 +56,6 @@
     padding-left: 20px;
 }
 
-.name-input,
 .name-input::placeholder {
     color: hsla(0, 0%, 9%, .4) !important;
 }
