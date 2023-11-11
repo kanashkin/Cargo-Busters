@@ -465,3 +465,7 @@ span {
     display: flex;
     gap: 80px;
 }
+
+.footer-margin {
+    margin-top: 40px;
+}

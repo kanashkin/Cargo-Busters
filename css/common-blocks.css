@@ -132,6 +132,13 @@
     bottom: 0;
 }
 
+@media (max-width: 1750px) {
+    .consultation-man {
+        max-width: 60%;
+        right: 0;
+    }
+}
+
 /* REVIEWS SECTION */
 
 .reviews {
