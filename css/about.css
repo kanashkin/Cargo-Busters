@@ -144,3 +144,42 @@
     object-fit: cover;
     border-radius: 40px;
 }
+
+/* ACTIVITY SECTION */
+
+.activity {
+    padding: 80px 0 100px;
+    background: #FEFEFE;
+}
+
+.activity__wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.activity__block {
+    width: 397px;
+    height: 200px;
+    padding: 40px;
+    background: #EEE;
+    border-radius: 40px;
+    position: relative;
+}
+
+.activity__block-title {
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    max-width: 50%;
+}
+
+.activity__block-image {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
