@@ -114,6 +114,37 @@ span {
     width: 32px;
 }
 
+.puncts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.puncts__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.puncts__list-item-title {
+    color: #C21B22;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.puncts__list-item-descr {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
 
 /* HEADER */
 

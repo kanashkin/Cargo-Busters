@@ -692,18 +692,7 @@
 .trust__list {
     width: 815px;
     align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
     background-repeat: no-repeat;
-}
-
-.trust__list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-    width: 100%;
 }
 
 .trust__list-item.start {
@@ -718,23 +707,6 @@
 .trust__list-item.end {
     align-self: flex-end;
     max-width: 618px;
-}
-
-.trust__list-item-title {
-    color: #C21B22;
-    font-family: 'Play', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 110%;
-    text-transform: uppercase;
-}
-
-.trust__list-item-descr {
-    color: #161616;
-    font-family: 'Manrope', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 130%;
 }
 
 .trust__list-item-descr span {
