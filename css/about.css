@@ -183,3 +183,18 @@
     transform: translateY(-50%);
     position: absolute;
 }
+
+/* CLIENTS SECTION */
+
+.clients {
+    padding: 80px 0 100px;
+    background: #FEFEFE;
+}
+
+.clients__wrapper {
+    margin-top: 60px;
+    display: flex;
+    gap: 90px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
