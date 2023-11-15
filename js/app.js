@@ -16,6 +16,11 @@ const autoSwiper = new Swiper('.auto-swiper', {
         prevEl: '.auto-swiper-left',
     },
 })
+const gallerySwiper = new Swiper('.gallery-swiper', {
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 4,
+})
 const reviewsSwiper = new Swiper('.reviews-swiper', {
     spaceBetween: 10,
     loop: true,

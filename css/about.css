@@ -198,3 +198,19 @@
     row-gap: 40px;
     flex-wrap: wrap;
 }
+
+/* GALLERY SECTION */
+
+.gallery {
+    padding: 80px 0 100px;
+    background: #EEE;
+}
+
+.gallery-swiper {
+    margin-top: 60px;
+}
+
+.gallery-swiper .swiper-slide {
+    width: 398px;
+    height: 300px;
+}
