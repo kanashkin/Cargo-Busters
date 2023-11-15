@@ -78,6 +78,10 @@ span {
     line-height: 110%;
 }
 
+.title span {
+    color: #C21B22;
+}
+
 .navigation {
     margin-top: 40px;
     display: flex;
