@@ -63,6 +63,7 @@ span {
     font-size: 20px;
     font-weight: 700;
     line-height: 105%;
+    max-width: fit-content;
 }
 
 .messengers {
@@ -97,21 +98,6 @@ span {
     max-width: 1567px;
     padding-left: 20px;
     margin: 0 0 0 auto;
-}
-
-.phone-input,
-.phone-input::placeholder {
-    color: hsla(0, 0%, 9%, .4) !important;
-}
-
-.phone-input-block {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.phone-code-input {
-    width: 32px;
 }
 
 .puncts__list {
@@ -152,6 +138,43 @@ span {
     right: 40px;
 }
 
+.form-input {
+    width: 100%;
+    padding: 0 20px;
+    background: #FEFEFE;
+    border-radius: 10px;
+    color: #303030;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    height: 47px;
+}
+
+.form-input input {
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+.phone-input-block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phone-code-input {
+    font-weight: 700 !important;
+    width: 37px;
+}
+
+.form-input::placeholder,
+.phone-input,
+.phone-input::placeholder {
+    color: hsla(0, 0%, 9%, .4) !important;
+}
+
+.form-input input::placeholder {
+    color: hsla(0, 0%, 9%, .4) !important;
+}
 
 /* HEADER */
 

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/common-blocks.css">
-    
+    <link rel="stylesheet" href="css/reviews.css">
     <title>Охотники за грузом | Отзывы</title>
 </head>
 <body>
@@ -84,7 +84,7 @@
     </header>
 
     <section class="reviews">
-        <h2 class="title reviews-title">Отзывы <br> <span>об «Охотниках за грузом»</span></h2>
+        <h1 class="title reviews-title">Отзывы <br> <span>об «Охотниках за грузом»</span></h1>
         <div class="swiper reviews-swiper right-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide review-card">
@@ -196,6 +196,96 @@
         <a href="reviews.html" class="review-btn-link"><button class="review-btn">Оставить отзыв</button></a>
     </section>
 
+    <section class="review">
+        <div class="review__wrapper container">
+            <div class="review__block">
+                <h2 class="title review-title">Для того, чтобы оставить отзыв, выберите нужную категорию: <span>*</span></h2>
+                <div class="category__list">
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Грузовое такси">
+                        <span>Грузовое такси</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Квартирный переезд">
+                        <span>Квартирный переезд</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Дачный переезд">
+                        <span>Дачный переезд</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Офисный переезд">
+                        <span>Офисный переезд</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозка мебели">
+                        <span>Перевозка мебели</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Услуги  грузчиков">
+                        <span>Услуги  грузчиков</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозка сейфов">
+                        <span>Перевозка сейфов</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозка банкоматов">
+                        <span>Перевозка банкоматов</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозка пианино">
+                        <span>Перевозка пианино</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Такелажные работы">
+                        <span>Такелажные работы</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Вывоз мусора">
+                        <span>Вывоз мусора</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозка стройматериалов">
+                        <span>Перевозка стройматериалов</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозки по РБ">
+                        <span>Перевозки по РБ</span>
+                    </label>
+                    <label class="category__list-item">
+                        <input type="radio" name="category" value="Перевозки по РФ">
+                        <span>Перевозки по РФ</span>
+                    </label>
+                </div>
+            </div>
+            <div class="review-form__block">
+                <p class="review-form-title">Оставить отзыв</p>
+                <div class="form__rating">
+                    <p class="form__rating-title">Оцените услугу:</p>
+                    <div class="form__rating__stars">
+                        <img class="form__rating-star" src="img/reviews/star.svg" alt="star icon">
+                        <img class="form__rating-star" src="img/reviews/star.svg" alt="star icon">
+                        <img class="form__rating-star" src="img/reviews/star.svg" alt="star icon">
+                        <img class="form__rating-star" src="img/reviews/star.svg" alt="star icon">
+                        <img class="form__rating-star" src="img/reviews/star.svg" alt="star icon">
+                    </div>
+                </div>
+                <form class="review-form" action="">
+                    <input class="form-input" type="text" placeholder="Ваше Имя">
+                    <div class="phone-input-block form-input">
+                        <input type="text" class="phone-code-input" required value="+375">
+                        <input type="tel" class="phone-input" required placeholder="(99) 999 99 99">
+                    </div>
+                    <input class="form-input" type="text" placeholder="Электронная почта">
+                    <textarea class="form-message form-input" placeholder="Ваш отзыв"></textarea>
+                    <button type="submit" class="red-btn">Отправить</button>
+                    <p class="review-form-agreement">Отправляя форму, вы соглашаетесь на обработку ваших персональных данных в соответствии с нашей <a href="" class="link">Политикой конфиденциальности</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -270,7 +360,11 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/reviews-page.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/phonemask.js"></script>
 </body>
 </html>
