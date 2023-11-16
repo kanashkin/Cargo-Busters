@@ -2,6 +2,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
     spaceBetween: 10,
     loop: true,
     slidesPerView: 4,
+    speed: 600,
     navigation: {
         nextEl: '.reviews-swiper-right',
         prevEl: '.reviews-swiper-left',
