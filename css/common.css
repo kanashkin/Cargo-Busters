@@ -145,6 +145,13 @@ span {
     line-height: 130%;
 }
 
+.close-popup {
+    display: inline-flex;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
 
 /* HEADER */
 

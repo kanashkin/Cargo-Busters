@@ -7,6 +7,7 @@ const stockSwiper = new Swiper('.stock-swiper', {
         prevEl: '.stock-swiper-left',
     },
 })
+
 const autoSwiper = new Swiper('.auto-swiper', {
     spaceBetween: 10,
     loop: true,
@@ -14,20 +15,6 @@ const autoSwiper = new Swiper('.auto-swiper', {
     navigation: {
         nextEl: '.auto-swiper-right',
         prevEl: '.auto-swiper-left',
-    },
-})
-const gallerySwiper = new Swiper('.gallery-swiper', {
-    spaceBetween: 10,
-    loop: true,
-    slidesPerView: 4,
-})
-const reviewsSwiper = new Swiper('.reviews-swiper', {
-    spaceBetween: 10,
-    loop: true,
-    slidesPerView: 4,
-    navigation: {
-        nextEl: '.reviews-swiper-right',
-        prevEl: '.reviews-swiper-left',
     },
 })
 
@@ -67,20 +54,6 @@ const collapse = () => {
 }
 
 collapse()
-
-const menuDropdown = () => {
-    const triggerBtn = document.querySelector('.service-menu-item')
-    const menuItems = document.querySelectorAll('.menu__list-item')
-    const menuBlock = document.querySelector('.submenu')
-
-    triggerBtn.addEventListener('click', e => {
-        e.preventDefault()
-        triggerBtn.classList.toggle('active')
-        menuBlock.classList.toggle('active')
-    })
-}
-
-menuDropdown()
 
 const calc = () => {
     const reverseAddress = () => {
