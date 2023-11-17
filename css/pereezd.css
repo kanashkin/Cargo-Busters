@@ -1,0 +1,47 @@
+/* PEREEZD SECTION */
+
+.pereezd {
+    height: 594px;
+    background: #FEFEFE;
+}
+
+.pereezd__wrapper {
+    position: relative;
+    padding-top: 80px;
+}
+
+.pereezd__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    max-width: 517px;
+}
+
+.pereezd-title {
+    font-size: 65px;
+}
+
+.pereezd__offer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pereezd-subtitle {
+    color: #C21B22;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.pereezd-descr {
+    font-size: 40px;
+}
+
+.pereezd-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
