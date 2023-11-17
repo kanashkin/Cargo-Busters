@@ -178,6 +178,7 @@
     margin-top: 40px;
     display: none;
     gap: 10px;
+    justify-content: center;
 }
 
 .services-content__block.active {
