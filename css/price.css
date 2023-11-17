@@ -85,3 +85,138 @@
     font-family: inherit;
     font-size: inherit;
 }
+
+/* PRICE SECTION */
+
+.price {
+    padding: 80px 0;
+    background: #FEFEFE;
+}
+
+.price__items {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.price__card {
+    padding: 40px;
+    border-radius: 40px;
+    background: #EEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.price__card,
+.loader__card {
+    max-height: 482px;
+    height: 100%;
+}
+
+.price__card-header {
+    min-height: 119px;
+    text-align: center;
+}
+
+.price__card-title {
+    color: #C21B22;
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 110%;
+    position: relative;
+    z-index: 2;
+}
+
+.price__card-subtitle {
+    margin-top: 8px;
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    position: relative;
+    z-index: 2;
+}
+
+.price__card-descr {
+    margin-top: 20px;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.price__card-photo {
+    width: 249.455px;
+    height: 112px;
+}
+
+.price__lines {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-line {
+    width: 100%;
+    border-radius: 20px;
+    background: #FEFEFE;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.price-line-cond {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+}
+
+.price-line-cond span,
+.price__card-descr span {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+.price-line-value {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.loader__card .price__card {
+    max-height: 330px;
+    height: 100%;
+    margin-top: 20px;
+    gap: 0;
+    justify-content: center;
+    position: relative;
+}
+
+.loader__card .price-line {
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.loader-photo {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 190px;
+    height: 234px;
+}
