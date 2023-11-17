@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common-blocks.css">
     <link rel="stylesheet" href="css/price.css">
     <title>Охотники за грузом | Цены</title>
 </head>
@@ -253,6 +255,78 @@
                 </div>
             </div>
         </section>
+
+        <section class="calculator">
+            <div class="container calculator__wrapper">
+                <div class="calculator__block">
+                    <h2 class="title calculator-title">Рассчитать стоимость перевозки груза</h2>
+                    <div class="calc">
+                        <div class="calc-top">
+                            <h2 class="calc-title">Калькулятор услуг</h2>
+                            <p class="calc-descr">С помощью калькулятора можно рассчитать приблизительную стоимость грузоперевозок</p>
+                            <form class="calc-form" action="">
+                                <div class="calc-form__block addresses-block">
+                                    <div class="input__block from__block">
+                                        <p class="input-title">Введите откуда</p>
+                                        <input class="input-value input-from" type="text" placeholder="Адрес погрузки">
+                                    </div>
+                                    <div class="arrow__block">
+                                        <img class="arrow__block-img" src="img/common-blocks/calc/reverse-arrow.svg" alt="reverse arrow icon">
+                                    </div>
+                                    <div class="input__block to__block">
+                                        <p class="input-title">Введите куда</p>
+                                        <input class="input-value input-to" type="text" placeholder="Адрес выгрузки">
+                                    </div>
+                                </div>
+                                <div class="calc-form__block parameters-block">
+                                    <div class="input__block data-input">
+                                        <p class="input-title">Выбрать дату</p>
+                                        <input class="input-value data-value" type="text" value="Сегодня" readonly>
+                                    </div>
+                                    <div class="input__block">
+                                        <p class="input-title">Грузчики</p>
+                                        <div class="input-line">
+                                            <button type="button" class="calc-minus"><img src="img/common-blocks/calc/minus.svg" alt="minus icon"></button>
+                                            <input class="input-value movers-input" type="number" value="0" readonly>
+                                            <button type="button" class="calc-plus"><img src="img/common-blocks/calc/plus.svg" alt="plus icon"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input__block option-input">
+                                    <p class="input-title">Дополнительные опции к заказу</p>
+                                    <input class="input-value options-field" type="text" value="азборка / сборка мебели" readonly>
+    
+                                    <ul class="options__list">
+                                        <li class="options__list-item selected">разборка / сборка мебели</li>
+                                        <li class="options__list-item">упаковочные материалы</li>
+                                        <li class="options__list-item">такелажные работы</li>
+                                        <li class="options__list-item">рохля</li>
+                                        <li class="options__list-item">гидроборт</li>
+                                    </ul>
+                                </div>
+                                <div class="calc-form__block">
+                                    <div class="promocode__block">
+                                        <input class="promocode-input" type="text" placeholder="Введите промокод">
+                                        <img class="promocode-arrow" src="img/common-blocks/calc/promocode-arrow.svg" alt="arrow icon">
+                                    </div>
+                                    <div class="input__block Номер телефона">
+                                        <p class="input-title">Номер телефона</p>
+                                        <div class="phone-input-block">
+                                            <input type="text" class="input-value phone-code-input" required value="+375">
+                                            <input type="tel" class="input-value phone-input" required placeholder="(99) 999 99 99">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="calc-bottom">
+                            <button type="submit" class="red-btn">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="calculator-planet" src="img/price/calculator/planet.png" alt="">
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -329,6 +403,13 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/phonemask.js"></script>
+
 </body>
 </html>

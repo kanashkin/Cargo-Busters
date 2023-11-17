@@ -220,3 +220,25 @@
     width: 190px;
     height: 234px;
 }
+
+/* CALCULATOR SECTION */
+
+.calculator {
+    padding: 30px 0 69px;
+    background: #FEFEFE;
+}
+
+.calculator__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.calculator-title {
+    font-size: 40px;
+}
+
+.calc {
+    margin-top: 50px;
+}
