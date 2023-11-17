@@ -103,3 +103,32 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* PROFF SECTION */
+
+.proff {
+    padding: 80px 0;
+    background: #FEFEFE;
+}
+
+.proff-title {
+    text-align: center;
+}
+
+.proff-descr {
+    display: block;
+    margin: 60px auto 0 auto;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 908px;
+    text-align: center;
+}
+
+.proff-descr span {
+    font-weight: 700;
+    font-size: inherit;
+    font-family: inherit;
+}
