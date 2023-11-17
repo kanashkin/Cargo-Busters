@@ -8,7 +8,7 @@
 }
 
 .consultation.black {
-    color: #FEFEFE;
+    color: #FEFEFE !important;
 }
 
 .consultation.black .boxes-bg {
@@ -37,6 +37,11 @@
     font-family: 'Play', sans-serif;
     font-size: 40px;
     max-width: 395px;
+}
+
+.consultation-title.big {
+    font-weight: 700;
+    max-width: 704px;
 }
 
 .consultation-descr {
@@ -79,12 +84,15 @@
 
 .slogan {
     margin-top: 20px;
-    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
     font-size: 24px;
+    font-weight: 500;
+    line-height: 110%;
 }
 
 .boxes-bg {
     position: absolute;
+    max-height: 100%;
     right: 0;
     bottom: 0;
 }
@@ -124,6 +132,15 @@
     position: absolute;
     right: 123px;
     bottom: 0;
+}
+
+.consultation-call {
+    margin-top: 20px;
+    color: #C21B22;
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
 }
 
 @media (max-width: 1750px) {
