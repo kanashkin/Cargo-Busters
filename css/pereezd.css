@@ -132,3 +132,64 @@
     font-size: inherit;
     font-family: inherit;
 }
+
+/* STAGES SECTION */
+
+.stages {
+    padding: 80px 0;
+    background: url(../img/pereezd/stages/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-blend-mode: luminosity;
+}
+
+.stages-title {
+    text-align: center;
+}
+
+.stages__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+}
+
+.stages__item {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stages__item-number {
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.stages__item-title {
+    color: #C21B22;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.stages__item-text {
+    margin-top: 12px;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.stages__item-text span {
+    font-weight: 700;
+}
