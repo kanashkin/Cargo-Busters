@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/common-blocks.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
     <title>Охотники за грузом | Грузовые перевозки</title>
 </head>
 <body>
@@ -107,7 +108,7 @@
                                     <input class="input-value input-from" type="text" placeholder="Адрес погрузки">
                                 </div>
                                 <div class="arrow__block">
-                                    <img class="arrow__block-img" src="img/index/promo/calc/reverse-arrow.svg" alt="reverse arrow icon">
+                                    <img class="arrow__block-img" src="img/common-blocks/calc/reverse-arrow.svg" alt="reverse arrow icon">
                                 </div>
                                 <div class="input__block to__block">
                                     <p class="input-title">Введите куда</p>
@@ -117,28 +118,36 @@
                             <div class="calc-form__block parameters-block">
                                 <div class="input__block data-input">
                                     <p class="input-title">Выбрать дату</p>
-                                    <input class="input-value" type="text" value="Сегодня">
+                                    <input class="input-value data-value" type="text" value="Сегодня" readonly>
                                 </div>
                                 <div class="input__block">
                                     <p class="input-title">Грузчики</p>
                                     <div class="input-line">
-                                        <button type="button" class="calc-minus"><img src="img/index/promo/calc/minus.svg" alt="minus icon"></button>
+                                        <button type="button" class="calc-minus"><img src="img/common-blocks/calc/minus.svg" alt="minus icon"></button>
                                         <input class="input-value movers-input" type="number" value="0" readonly>
-                                        <button type="button" class="calc-plus"><img src="img/index/promo/calc/plus.svg" alt="plus icon"></button>
+                                        <button type="button" class="calc-plus"><img src="img/common-blocks/calc/plus.svg" alt="plus icon"></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="input__block option-input">
                                 <p class="input-title">Дополнительные опции к заказу</p>
-                                <input class="input-value" type="text" value="Разборка / сборка мебели">
+                                <input class="input-value options-field" type="text" value="разборка / сборка мебели" readonly>
+
+                                <ul class="options__list">
+                                    <li class="options__list-item selected">разборка / сборка мебели</li>
+                                    <li class="options__list-item">упаковочные материалы</li>
+                                    <li class="options__list-item">такелажные работы</li>
+                                    <li class="options__list-item">рохля</li>
+                                    <li class="options__list-item">гидроборт</li>
+                                </ul>
                             </div>
                             <div class="calc-form__block">
                                 <div class="promocode__block">
                                     <input class="promocode-input" type="text" placeholder="Введите промокод">
-                                    <img class="promocode-arrow" src="img/index/promo/calc/promocode-arrow.svg" alt="arrow icon">
+                                    <img class="promocode-arrow" src="img/common-blocks/calc/promocode-arrow.svg" alt="arrow icon">
                                 </div>
                                 <div class="input__block Номер телефона">
-                                    <p class="input-title">Дополнительные опции к заказу</p>
+                                    <p class="input-title">Номер телефона</p>
                                     <div class="phone-input-block">
                                         <input type="text" class="input-value phone-code-input" required value="+375">
                                         <input type="tel" class="input-value phone-input" required placeholder="(99) 999 99 99">
@@ -783,7 +792,9 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index-page.js"></script>

@@ -216,3 +216,261 @@
     font-weight: 700;
     line-height: 105%;
 }
+
+/* CALC BLOCK */
+
+.calc {
+    max-width: 500px;
+}
+
+.calc .phone-code-input {
+    width: 32px;
+}
+
+.calc-top {
+    border-radius: 20px 20px 0px 0px;
+    background: #EEE;
+    padding: 40px;
+}
+
+.calc-bottom {
+    border-radius: 0px 0px 20px 20px;
+    background: #303030;
+}
+
+.calc-title {
+    color: #161616;
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.calc-descr {
+    margin-top: 12px;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.calc-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input__block {
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 10px;
+    height: 55px;
+}
+
+.input-title {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    opacity: .6;
+}
+
+.input-value,
+.input-value::placeholder {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.from__block {
+    border-radius: 10px 0 0 10px;
+}
+
+.to__block {
+    border-radius: 0 10px 10px 0;
+}
+
+.arrow__block {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.calc-form__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calc-form__block.addresses-block {
+    gap: 0;
+}
+
+.input__block.data-input,
+.input__block.option-input {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    cursor: pointer;
+}
+
+.input__block.data-input {
+    background-image: url(../img/common-blocks/calc/calendar.svg);
+}
+
+.input__block.option-input {
+    background-image: url(../img/common-blocks/calc/option.svg);
+}
+
+.option-input {
+    position: relative;
+}
+
+.options-field {
+    max-width: 85%;
+}
+
+.options__list {
+    position: absolute;
+    width: 70%;
+    background: #fff;
+    left: 0;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    opacity: 0;
+    z-index: -1;
+    transition: .3s all;
+}
+
+.options__list.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.options__list-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.options__list-item.selected {
+    background-image: url('../img/common-blocks/calc/check.png');
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+}
+
+.options__list-item:last-child {
+    border: none;
+}
+
+.movers-input {
+    width: 18px;
+    text-align: center;
+}
+
+.movers-input::-webkit-outer-spin-button,
+.movers-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.input-line button {
+    display: inline-flex;
+}
+
+.promocode-input {
+    border-radius: 4px;
+    background: #fff;
+    width: fit-content;
+    height: 55px;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 147px;
+}
+
+.promocode-input,
+.promocode-input::placeholder {
+    color: hsla(0, 0%, 9%, .6);
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.promocode__block {
+    display: flex;
+    align-items: center;
+}
+
+.calc-bottom {
+    padding: 20px 0;
+    border-radius: 0px 0px 20px 20px;
+    background: #303030;
+    text-align: center;
+}
+
+
+.daterangepicker {
+    border-radius: 10px !important;
+}
+
+.daterangepicker:before, .daterangepicker:after {
+    content: none !important;
+}
+
+.daterangepicker * {
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.month {
+    font-size: 15px !important;
+}
+
+.daterangepicker td.available {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+}
+
+.daterangepicker td.active {
+    background-color: #C21B22 !important;
+}
+
+.daterangepicker .btn {
+    font-size: 14px !important;
+    border: 1px solid #c7c1c1;
+    border-radius: 10px !important;
+}
