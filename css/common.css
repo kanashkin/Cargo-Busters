@@ -533,3 +533,70 @@ span {
 .footer-margin {
     margin-top: 40px;
 }
+
+/* POPUP */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: -1;
+    opacity: 0;
+    transition: .3s all;
+}
+
+.overlay.active {
+    z-index: 100;
+    opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: #EEE;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.popup-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.popup-descr {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.popup-form .form-input {
+    height: 66px;
+}
+
+.popup-form input {
+    font-size: 20px;
+}
+
+.popup-form .phone-code-input {
+    width: 46px;
+}
+
+.popup-form .form-agreement {
+    margin-top: 12px;
+}
+
+.popup-form button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}

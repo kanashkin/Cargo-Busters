@@ -39,7 +39,7 @@
                                 <div class="submenu">
                                     <ul class="submenu__list">
                                         <li class="submenu__list-item title-item"><a href="">Переезды</a></li>
-                                        <li class="submenu__list-item"><a href="">Квартирный</a></li>
+                                        <li class="submenu__list-item"><a href="pereezd.html">Квартирный</a></li>
                                         <li class="submenu__list-item"><a href="">Дачный </a></li>
                                         <li class="submenu__list-item"><a href="">Офисный </a></li>
                                     </ul>
@@ -221,6 +221,23 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay modal-popup">
+        <div class="popup">
+            <button class="close-popup"><img src="img/close.svg" alt="close icon"></button>
+            <img class="popup-logo" src="img/popup/logo.svg" alt="">
+            <h2 class="title">Закажите обратный звонок</h2>
+            <p class="popup-descr">После вашего сообщения оператор свяжется с вами, поможет оформить заказ или проконсультирует</p>
+            <form class="popup-form" action="">
+                <div class="phone-input-block form-input">
+                    <input type="text" class="phone-code-input" required="" value="+375">
+                    <input type="tel" class="phone-input" required="" placeholder="(99) 999 99 99">
+                </div>
+                <p class="form-agreement consultation-text">Отправляя форму, вы соглашаетесь на обработку ваших персональных данных в соответствии с нашей <a class="link" href="">Политикой конфиденциальности</a></p>
+                <button class="red-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/common.js"></script>

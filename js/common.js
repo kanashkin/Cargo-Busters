@@ -1,5 +1,5 @@
 const menuDropdown = () => {
-    const triggerBtn = document.querySelector('.service-menu-item')
+    const triggerBtn = document.querySelector('.service-menu-item>a')
     const menuItems = document.querySelectorAll('.menu__list-item')
     const menuBlock = document.querySelector('.submenu')
 
@@ -12,12 +12,31 @@ const menuDropdown = () => {
 
 menuDropdown()
 
+const openPopup = () => {
+    const triggerBtns = document.querySelectorAll('.popup-btn')
+    const overlay = document.querySelector('.overlay')
+
+    triggerBtns.forEach(item => {
+        item.onclick = function() {
+            overlay.classList.add('active')
+        }
+    })
+
+    overlay.onclick = function(e) {
+        if (e.target.classList.contains('overlay')) {
+            overlay.classList.remove('active')
+        }
+    }
+}
+
+openPopup()
+
 const closePopup = () => {
     const closeBtns = document.querySelectorAll('.close-popup')
 
     closeBtns.forEach(item => {
         item.onclick = function() {
-            const currentPopup = item.closest('.popup')
+            const currentPopup = item.closest('.modal-popup')
             currentPopup.classList.remove('active')
         }
     })
