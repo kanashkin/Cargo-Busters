@@ -1,15 +1,3 @@
-const reviewsSwiper = new Swiper('.reviews-swiper', {
-    spaceBetween: 10,
-    loop: true,
-    slidesPerView: 4,
-    speed: 600,
-    navigation: {
-        nextEl: '.reviews-swiper-right',
-        prevEl: '.reviews-swiper-left',
-    },
-})
-
-
 const menuDropdown = () => {
     const triggerBtn = document.querySelector('.service-menu-item')
     const menuItems = document.querySelectorAll('.menu__list-item')
@@ -36,3 +24,16 @@ const closePopup = () => {
 }
 
 closePopup()
+
+try {
+    const reviewsSwiper = new Swiper('.reviews-swiper', {
+        spaceBetween: 10,
+        loop: true,
+        slidesPerView: 4,
+        speed: 600,
+        navigation: {
+            nextEl: '.reviews-swiper-right',
+            prevEl: '.reviews-swiper-left',
+        },
+    })
+} catch {}

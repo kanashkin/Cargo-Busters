@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/common-blocks.css">
-    <link rel="stylesheet" href="css/contacts.css">
-    <title>Охотники за грузом | Контакты</title>
+    <link rel="stylesheet" href="css/price.css">
+    <title>Охотники за грузом | Цены</title>
 </head>
 <body>
 
@@ -62,10 +61,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu__list-item"><a href="price.html">Цены</a></li>
+                            <li class="menu__list-item active"><a href="price.html">Цены</a></li>
                             <li class="menu__list-item"><a href="reviews.html">Отзывы</a></li>
                             <li class="menu__list-item"><a href="about.html">О компании</a></li>
-                            <li class="menu__list-item active"><a href="contacts.html">Контакты</a></li>
+                            <li class="menu__list-item"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -82,68 +81,13 @@
             </div>
         </div>
     </header>
-    
+
     <main>
-        <section class="contacts">
-            <div class="container">
-                <h1 class="title contacts-title">Контакты компании <br> <span>«Охотники за грузом»</span></h1>
-                <ul class="contacts__list">
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-text">
-                            ИП Абразовский Денис Анатольевич, <br>
-                            <span>УНП 192701004</span>
-                        </p>
-                    </li>
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-title phone">Контакты:</p>
-                        <a href="tel:+375296116670" class="contacts__list-item-text">+375 (29) 611-66-70</a>
-                    </li>
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-title working-mode">Режим работы:</p>
-                        <p class="contacts__list-item-text">Доставка, прием заявок - ежедневно, <span>круглосуточно</span></p>
-                    </li>
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-title address">Наш адрес:</p>
-                        <p class="contacts__list-item-text">г. Минск, ул. Академика Карского,21 <br> (каб. 16)</p>
-                    </li>
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-title mail">Электронная почта:</p>
-                        <a href="mailto:info@gruz-ohotnik.by" class="contacts__list-item-text">info@gruz-ohotnik.by</a>
-                    </li>
-                    <li class="contacts__list-item">
-                        <p class="contacts__list-item-title social">Мы в соц.сетях:</p>
-                        <div class="messengers">
-                            <a class="messenger-icon" href="">
-                                <img src="img/logos/telegram.svg" alt="telegram logo">
-                            </a>
-                            <a class="messenger-icon" href="">
-                                <img src="img/logos/viber.svg" alt="viber logo">
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="contacts-map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9308cc52bb468953f997b5cc6a1575aa34e762b493b4ca771111f3f08a11c11b&amp;source=constructor" width="1217" height="674" frameborder="0"></iframe>
-                </div>
-            </div>
-        </section>
-        <section class="consultation white">
-            <div class="container">
-                <div class="consultation__content">
-                    <h2 class="consultation-title consultation-text">Требуется консультация?</h2>
-                    <p class="consultation-descr consultation-text">Оставьте контактные данные, и наш специалист свяжется с вами в ближайшее время, чтобы предоставить вам всю необходимую информацию. </p>
-                    <form class="consultation-form" action="">
-                        <input class="form-input" type="text" placeholder="Ваше Имя">
-                        <div class="phone-input-block form-input">
-                            <input type="text" class="phone-code-input" required value="+375">
-                            <input type="tel" class="phone-input" required placeholder="(99) 999 99 99">
-                        </div>
-                        <button type="submit" class="red-btn">Заказать звонок</button>
-                    </form>
-                    <p class="form-agreement consultation-text">Отправляя форму, вы соглашаетесь на обработку ваших персональных данных в соответствии с нашей <a class="link" href="">Политикой конфиденциальности</a></p>
-                    <p class="slogan">Ваша уверенность — наш приоритет!</p>
-                </div>
-                <img class="boxes-bg" src="img/common-blocks/boxes.png" alt="">
+        <section class="price-promo">
+            <div class="container price-promo__wrapper">
+                <h1 class="price-promo-title title">Стоимость грузоперевозки</h1>
+                <p class="price-promo-descr">Предлагаем услуги грузоперевозки по Минску, Беларуси, России по приятным ценам</p>
+                <img class="price-promo-bg" src="img/price/promo/bg.png" alt="">
             </div>
         </section>
     </main>
@@ -222,9 +166,6 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/jquery.maskedinput.js"></script>
-    <script src="js/phonemask.js"></script>
 </body>
 </html>

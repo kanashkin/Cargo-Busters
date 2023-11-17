@@ -1,0 +1,26 @@
+/* PRICE-PROMO SECTION */
+
+.price-promo {
+    padding: 80px 0;
+    background: #fefefe;
+}
+
+.price-promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.price-promo-title {
+    font-size: 65px;
+}
+
+.price-promo-descr {
+    color: #C21B22;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+}
