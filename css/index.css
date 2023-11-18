@@ -5,6 +5,7 @@
     background: url(../img/index/promo/bg.png);
     background-position: left bottom;
     background-repeat: no-repeat;
+    background-size: 55%;
 }
 
 .promo__wrapper {
