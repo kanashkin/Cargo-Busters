@@ -133,6 +133,256 @@
     font-family: inherit;
 }
 
+/* RATES SECTION */
+
+.rates {
+    padding: 80px 0;
+    background: #EEE;
+}
+
+.rates-title {
+    font-size: 65px;
+}
+
+.rates__wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.rates__tabs {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 24px;
+    background: #FEFEFE;
+    padding: 4px;
+    max-width: fit-content;
+}
+
+.rates__tab {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 20px;
+    background: #FEFEFE;
+    cursor: pointer;
+
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.rates__tab-name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.rates__tab-price {
+    font-size: 20px;
+    text-align: center;
+}
+
+.rates__tab.active {
+    background: #C21B22;
+    color: #FEFEFE;
+}
+
+.rates__content {
+    margin-top: 20px;
+    display: none;
+}
+
+.rates__content.active {
+    display: block;
+}
+
+.rates__content__wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.rates__content-title {
+    font-size: 40px;
+}
+
+.rates__content-descr {
+    margin-top: 12px;
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.characters {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.characters__item {
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.characters__item-name {
+    padding: 10px;
+    color: #FEFEFE;
+    font-size: 16px;
+    border-radius: 12px 12px 0px 0px;
+    background: #303030;
+    text-align: center;
+}
+
+.characters__item-value {
+    text-align: center;
+    padding: 10px;
+    color: #303030;
+    font-size: 20px;
+    border-radius: 0px 0px 12px 12px;
+    background: var(--White, #FEFEFE);
+}
+
+.conds {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.conds__item {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 194px;
+}
+
+.conds__item-title {
+    color: #303030;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.conds__item-descr {
+    margin-top: 12px;
+    color: #161616;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.rates__photo {
+    width: 398px;
+    height: 320px;
+}
+
+.rates__price__block {
+    text-align: center;
+}
+
+.rates-time {
+    margin-top: 4px;
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.rates__price-descr {
+    margin-top: 12px;
+    color: #303030;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.rates__warning {
+    max-width: 398px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: #FEFEFE;
+}
+
+.rates__warning-text {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+}
+
+.rates__warning-text span {
+    color: #C21B22;
+}
+
+.rates__form__block {
+    border-radius: 40px;
+    background: #FEFEFE;
+    padding: 40px;
+    max-width: 398px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rates__form-title {
+    font-size: 30px;
+}
+
+.rates__form-descr {
+    color: #161616;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.rates__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rates__form .form-input {
+    border: 1px solid #EEE;
+}
+
+.rates__form input,
+.rates__form textarea {
+    font-size: 20px;
+}
+
+.rates__form .phone-code-input {
+    width: 46px;
+}
+
+.rates__form button {
+    max-width: 100%;
+}
+
 /* STAGES SECTION */
 
 .stages {
