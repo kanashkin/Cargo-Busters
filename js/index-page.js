@@ -19,7 +19,7 @@ const autoSwiper = new Swiper('.auto-swiper', {
 })
 
 const collapse = () => {
-    const triggerBtns = document.querySelectorAll('.collapse__block-trigger')
+    const triggerBtns = document.querySelectorAll('.collapse__block__wrapper')
 
     triggerBtns.forEach(item => {
         item.addEventListener('click', () => {

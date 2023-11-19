@@ -72,7 +72,6 @@
 }
 
 .form-agreement {
-    color: #161616;
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -84,6 +83,10 @@
 .form-agreement .link {
     font-weight: 700;
     color: #C21B22;
+}
+
+.form-agreement.black {
+    color: #161616;
 }
 
 .slogan {

@@ -187,6 +187,8 @@
 }
 
 .services-card {
+    max-height: 522px;
+    height: 100%;
     border-radius: 20px;
     max-width: 33.33333%;
     width: 100%;
@@ -219,9 +221,17 @@
 }
 
 .services-card__content {
+    height: 100%;
     border-radius: 0 0 20px 20px;
     background: #EEE;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 318px;
+}
+
+.content-header {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -248,7 +258,7 @@
 }
 
 .services-card__list-item {
-    height: 30px;
+    min-height: 30px;
     color: #161616;
     font-family: 'Manrope', sans-serif;
     font-size: 18px;
@@ -590,6 +600,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .collapse__block-title {
