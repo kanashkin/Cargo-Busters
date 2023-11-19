@@ -1,0 +1,74 @@
+/* PRIVACY SECTION */
+
+.privacy {
+    padding: 100px 0;
+    background: #EFEFEF;
+}
+
+.privacy-subtitle {
+    margin: 10px 0 30px;
+    font-size: 30px;
+}
+
+.privacy-subtitle.first{
+    margin: 30px 0;
+}
+
+.privacy p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #161616;
+    margin-bottom: 20px;
+}
+
+.privacy-table {
+    border-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.privacy-table td {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #161616;
+}
+
+.privacy-table td {
+    padding: 20px;
+    border-color: gray;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+}
+
+
+td.privacy-table-title {
+    border-width: 1px 0 0 1px;
+}
+
+.privacy-table tr:last-child td.privacy-table-title {
+    border-width: 1px 0 1px 1px;
+}
+
+.privacy-table tr:last-child td {
+    border-width: 1px;
+}
+
+
+.privacy-table__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.privacy-table__list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.privacy-table__list li::before {
+    content: "•";
+    font-size: 20px;
+}
+

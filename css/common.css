@@ -534,6 +534,20 @@ span {
     margin-top: 40px;
 }
 
+.sas-copyright {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.sas-copyright::after {
+    content: "";
+    width: 96.552px;
+    height: 40px;
+    background: url('../img/logo-sas.svg') center center / cover no-repeat;
+}
+
 /* POPUP */
 
 .overlay {
