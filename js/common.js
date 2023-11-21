@@ -1,12 +1,13 @@
 const menuDropdown = () => {
-    const triggerBtn = document.querySelector('.service-menu-item>a')
-    const menuItems = document.querySelectorAll('.menu__list-item')
-    const menuBlock = document.querySelector('.submenu')
+    const triggerBtns = document.querySelectorAll('.service-menu-item>a')
 
-    triggerBtn.addEventListener('click', e => {
-        e.preventDefault()
-        triggerBtn.classList.toggle('active')
-        menuBlock.classList.toggle('active')
+    triggerBtns.forEach(triggerBtn => {
+        triggerBtn.addEventListener('click', e => {
+            e.preventDefault()
+            const menuBlock = triggerBtn.nextElementSibling
+            triggerBtn.classList.toggle('active')
+            menuBlock.classList.toggle('active')
+        })
     })
 }
 
@@ -155,3 +156,16 @@ try {
     calc()
     selectOptions()
 } catch {}
+
+
+const burgerMenu = () => {
+    const triggerBtn = document.querySelector('.burger')
+    const menu = document.querySelector('.burger-menu')
+
+    triggerBtn.onclick = function() {
+        menu.classList.toggle('active')
+        triggerBtn.classList.toggle('active')
+    }
+}
+
+burgerMenu()

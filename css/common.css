@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 input {
     width: 100%;
 }
@@ -430,6 +434,17 @@ span {
     .info-item {
         font-size: 14px;
     }
+    .burger {
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/burger.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: .3s all;
+    }
+    .burger.active {
+        background-image: url(../img/burger-active.svg);
+    }
 }
 
 /* Footer */
@@ -667,4 +682,91 @@ span {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+/* burger-menu */
+section:first-child {
+    position: relative;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .burger-menu {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        right: -100%;
+        top: 2px;
+        max-width: 379px;
+        width: 100%;
+        padding: 40px 0;
+        background: #161616;
+        transition: .3s all;
+    }
+    
+    .burger-menu.active {
+        right: 0;
+    }
+    
+    .burger-menu .menu__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .burger-menu .menu__list-item {
+        border: none;
+        font-size: 24px;
+    }
+    
+    .burger-menu .menu__list-item>a {
+        padding: 0;
+        padding-left: 20px;
+    }
+    
+    .burger-menu .service-menu-item {
+        display: block;
+    }
+    
+    .burger-menu .submenu {
+        margin-top: 20px;
+        position: static;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .burger-menu .submenu .submenu__list {
+        padding: 0;
+        gap: 16px;
+    }
+
+    .burger-menu .submenu .submenu__list-item {
+        font-size: 16px;
+    }
+    
+    .burger-menu .submenu.active {
+        display: flex;
+    }
+    
+    .burger-menu .phone-btn {
+        display: none;
+    }
+    
+    .burger-menu .messengers {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .burger-menu .phone-btn,
+    .burger-menu .messengers {
+        display: flex;
+        justify-content: center;
+
+    }
 }
