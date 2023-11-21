@@ -94,6 +94,12 @@ span {
     color: #C21B22;
 }
 
+@media (max-width: 1200px) {
+    .title {
+        font-size: 50px !important;
+    }
+}
+
 .navigation {
     margin-top: 40px;
     display: flex;

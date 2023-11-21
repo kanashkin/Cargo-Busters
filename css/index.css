@@ -57,6 +57,32 @@
     background: url(../img/index/promo/list-point.svg);
 }
 
+.title-tablets {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        background-position: left -160% bottom;
+        background-size: 77%;
+    }
+    .title-tablets {
+        display: block;
+    }
+    .promo-titles {
+        display: none;
+    }
+    .promo__wrapper {
+        margin-top: 30px;
+    }
+    .promo-services__list {
+        margin-top: 0;
+    }
+    .promo-services__list-item {
+        font-size: 24px;
+    }
+}
+
 /* STOCK SECTION */
 
 .stock {
@@ -138,6 +164,7 @@
     left: -26%;
     bottom: -32%;
 }
+
 
 /* SERVICES SECTION */
 

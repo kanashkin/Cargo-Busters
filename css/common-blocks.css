@@ -498,3 +498,18 @@
     border: 1px solid #c7c1c1;
     border-radius: 10px !important;
 }
+
+@media (max-width: 1200px) {
+    .calc {
+        max-width: 440px;
+    }
+    .calc-title {
+        font-size: 24px;
+    }
+    .calc-descr {
+        font-size: 14px;
+    }
+    .calc-top {
+        padding: 20px;
+    }
+}
