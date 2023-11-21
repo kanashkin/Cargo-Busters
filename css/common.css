@@ -154,6 +154,18 @@ span {
     line-height: 130%;
 }
 
+@media (max-width: 1200px) {
+    .puncts__list {
+        gap: 20px;
+    }
+    .puncts__list-item-title {
+        font-size: 24px;
+    }
+    .puncts__list-item-descr {
+        font-size: 18px;
+    }
+}
+
 .close-popup {
     display: inline-flex;
     position: absolute;
@@ -505,6 +517,14 @@ span {
     max-width: 164px;
 }
 
+.footer__navs {
+    display: flex;
+    max-width: 35%;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .footer-menu__list {
     display: flex;
     flex-direction: column;
@@ -626,6 +646,35 @@ span {
     background: url('../img/logo-sas.svg') center center / cover no-repeat;
 }
 
+.footer__block .footer-call {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .footer__wrapper {
+        gap: 20px;
+    }
+    .footer-margin {
+        margin: 0;
+    }
+    .footer__navs {
+        flex-direction: column;
+        gap: 28px;
+        max-width: 25%;
+    }
+    .footer-call {
+        display: none;
+    }
+    .footer__block .footer-call {
+        margin-top: 14px;
+        display: inline-flex;
+    }
+    .footer-info {
+        margin-top: 40px;
+        gap: 200px;
+    }
+}
+
 /* POPUP */
 
 .overlay {
@@ -694,6 +743,12 @@ span {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+    .form-input {
+        height: 42px;
+    }
 }
 
 /* burger-menu */

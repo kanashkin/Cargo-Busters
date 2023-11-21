@@ -623,7 +623,7 @@
         z-index: 10;
     }
     .loader-coast-bg {
-        max-width: 70%;
+        max-width: 65%;
     }
 }
 
@@ -673,8 +673,40 @@
 .trust-bg {
     position: absolute;
     top: 17%;
-    left: -20px;
-    height: 640px;
+    left: 20%;
+}
+.trust-bg img {
+    max-height: 100%;
+}
+.trust-car {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+    .trust-title {
+        max-width: 544px;
+        text-align: left;
+    }
+    .trust__list {
+        width: 585px;
+    }
+    .trust__list-item.center {
+        max-width: 481px;
+    }
+    .trust__list-item.end {
+        max-width: 445px;
+    }
+    .trust-bg {
+        top: 27%;
+        height: 470px;
+        left: 5%;
+    }
+    .trust-car {
+        max-width: 150%;
+    }
 }
 
 /* FAQ SECTION */
@@ -745,4 +777,19 @@
 
 .collapse__block.active .collapse__block-text {
     display: block;
+}
+
+@media (max-width: 1200px) {
+    .faq {
+        padding: 60px 0;
+    }
+    .collapse__block__wrapper {
+        padding: 10px 20px;
+    }
+    .collapse__block-title {
+        font-size: 24px;
+    }
+    .collapse__block-text {
+        font-size: 16px;
+    }
 }

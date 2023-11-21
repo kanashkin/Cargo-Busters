@@ -157,6 +157,20 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .consultation-form {
+        gap: 9px;
+    }
+    .boxes-bg {
+        right: -70px;
+        max-width: 52%;
+    }
+    .consultation-man {
+        right: -34%;
+        max-width: 75%;
+    }
+}
+
 /* REVIEWS SECTION */
 
 .reviews {
@@ -239,6 +253,20 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 105%;
+}
+
+@media (max-width: 1200px) {
+    .reviews {
+        padding: 60px 0 40px;
+        background: #EEE;
+    }
+    .reviews-swiper {
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+    .review-btn {
+        font-size: 16px;
+    }
 }
 
 /* CALC BLOCK */
