@@ -522,6 +522,40 @@
     color: #FEFEFE;
 }
 
+@media(max-width: 1200px) {
+    .auto {
+        padding-bottom: 20px;
+    }
+    .auto-card {
+        max-width: 359px !important;
+    }
+    .auto-card-title {
+        font-size: 20px;
+    }
+    .auto-card-weight {
+        font-size: 16px;
+    }
+    .price-text {
+        font-size: 16px;
+    }
+    .auto-circle {
+        width: 200px;
+        height: 200px;
+    }
+    .auto-circle-title span {
+        font-size: 40px;
+    }
+    .auto-circle-descr {
+        font-size: 16px;
+    }
+    .auto-circle.red {
+        right: 20px;
+    }
+    .auto-circle.white {
+        right: 185px;
+    }
+}
+
 /* LOADER-COAST SECTION */
 
 .loader-coast {
