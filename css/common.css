@@ -111,6 +111,12 @@ span {
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+    .navigation {
+        margin-top: 20px;
+    }
+}
+
 .right-swiper {
     max-width: 1567px;
     padding-left: 20px;
