@@ -25,6 +25,10 @@
     line-height: 110%;
 }
 
+.price-promo-bg {
+    max-width: 100%;
+}
+
 /* FACTORS SECTION */
 
 .factors {

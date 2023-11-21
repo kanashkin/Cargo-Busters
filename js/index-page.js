@@ -30,3 +30,33 @@ const collapse = () => {
 }
 
 collapse()
+
+const servicesCards = () => {
+    const servicesCardContents = document.querySelectorAll('.services-card__content')
+    let heights = []
+
+    servicesCardContents.forEach(item => {
+        let blockHeight = item.clientHeight
+        heights.push(blockHeight)
+    })
+
+    let highest = Math.max.apply(null, heights)
+
+    servicesCardContents.forEach(item => {
+        if(item.closest('.services-content__block').classList.contains('active')) {
+            item.style.minHeight = highest + 'px'
+        }
+    })
+}
+
+servicesCards()
+
+document.querySelectorAll('.services-tab').forEach(item => {
+    item.onclick = function() {
+        servicesCards()
+    }
+})
+
+window.addEventListener('resize', () => {
+    servicesCards()
+})

@@ -65,6 +65,14 @@ span {
     max-width: fit-content;
 }
 
+@media (max-width: 1200px) {
+    .red-btn {
+        font-size: 16px;
+        height: 43px;
+        padding: 0 20px;
+    }
+}
+
 .messengers {
     display: flex;
     gap: 7px;
@@ -316,6 +324,7 @@ span {
 .header__buttons {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .phone-btn button{
@@ -379,6 +388,48 @@ span {
 
 .exchange::before {
     background: url(../img/header/exchange.svg);
+}
+
+.header-tablet {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .header-desktop {
+        display: none;
+    }
+    .header-tablet {
+        display: block;
+        padding: 16px 0;
+    }
+    .header-tablet .header__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .header-tablet .header__wrapper {
+        gap: 23px;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .header-tablet .header__top,
+    .header-tablet .header__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-tablet .header__info {
+        width: fit-content;
+        margin-top: 0;
+    }
+    .phone-btn button {
+        font-size: 16px;
+        height: 43px;
+    }
+    .info-item {
+        font-size: 14px;
+    }
 }
 
 /* Footer */

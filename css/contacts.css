@@ -12,7 +12,7 @@
 .contacts__list {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 398px);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
 }
 

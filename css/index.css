@@ -11,6 +11,7 @@
 .promo__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .promo-title {
@@ -187,7 +188,6 @@
 }
 
 .services-card {
-    max-height: 522px;
     height: 100%;
     border-radius: 20px;
     max-width: 33.33333%;
@@ -196,7 +196,7 @@
 
 .services-card-img {
     width: 100%;
-    max-height: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -228,7 +228,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 318px;
+    gap: 20px;
 }
 
 .content-header {
