@@ -226,8 +226,7 @@
 .services-card {
     height: 100%;
     border-radius: 20px;
-    max-width: 33.33333%;
-    width: 100%;
+    width: 398px;
 }
 
 .services-card-img {
@@ -327,6 +326,30 @@
     max-width: fit-content;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .services {
+        padding: 60px 0 104px;
+    }
+    .services-content__wrapper {
+        overflow-x: auto;
+    }
+    .services-content__wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .services-content__wrapper {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .services-content__block {
+        justify-content: flex-start;
+        padding: 0 20px;
+        width: fit-content;
+    }
+    .services-card {
+        width: 359px;
+    }
 }
 
 /* AUTO BLOCK */
