@@ -612,6 +612,21 @@
     line-height: 110%;
 }
 
+@media (max-width: 1200px) {
+    .loader-coast {
+        height: 654px;
+    }
+    .loader__info {
+        margin: 0;
+        margin-top: 91px;
+        position: relative;
+        z-index: 10;
+    }
+    .loader-coast-bg {
+        max-width: 70%;
+    }
+}
+
 /* TRUST SECTION */
 
 .trust {
