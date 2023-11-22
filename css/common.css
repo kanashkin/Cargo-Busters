@@ -10,11 +10,6 @@
     box-sizing: border-box;
 }
 
-body,
-section {
-    overflow-x: hidden;
-}
-
 input {
     width: 100%;
 }
@@ -892,6 +887,39 @@ span {
     }
 }
 
+@media (max-width: 767px) {
+    .popup {
+        padding: 20px;
+        max-width: 95%;
+        gap: 12px;
+    }
+    .popup-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .popup .title {
+        font-size: 18px !important;
+    }
+    .popup-descr {
+        font-size: 14px;
+    }
+    .popup .form-input {
+        height: 45px;
+    }
+    .popup .form-input input {
+        font-size: 16px;
+    }
+    .popup .form-input .phone-code-input {
+        width: 37px;
+    }
+    .popup .form-agreement {
+        font-size: 14px;
+    }
+    .popup-form button {
+        margin-top: 12px;
+    }
+}
+
 /* burger-menu */
 section:first-child {
     position: relative;
@@ -903,21 +931,23 @@ section:first-child {
 
 @media (max-width: 1200px) {
     .burger-menu {
-        display: block;
         position: absolute;
-        z-index: 50;
-        right: -100%;
+        display: block;
+        right: 0;
         top: 2px;
         max-width: 379px;
         width: 100%;
         padding: 40px 0;
         background: #161616;
+
         transition: .3s all;
+        z-index: -1;
+        opacity: 0;
     }
     .burger-menu.active {
-        right: 0;
+        z-index: 50;
+        opacity: 1;
     }
-    
     .burger-menu .menu__list {
         flex-direction: column;
         gap: 20px;
