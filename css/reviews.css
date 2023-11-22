@@ -160,3 +160,27 @@
         font-size: 40px !important;
     }
 }
+
+@media (max-width: 767px) {
+    .review {
+        padding: 40px 0;
+    }
+    .review-title {
+        font-size: 24px !important;
+    }
+    .category__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .category__list-item>span {
+        font-size: 18px;
+    }
+    .review__block {
+        padding: 0 20px;
+    }
+    .review .container {
+        padding: 0;
+    }
+}

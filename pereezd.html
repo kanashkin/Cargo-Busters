@@ -118,6 +118,30 @@
         </div>
     </header>
 
+    <header class="header header-mobile">
+        <div class="header__wrapper container">
+            <div class="header__block">
+                <div class="header__logo__block">
+                    <a href="index.html" class="logo">
+                        <img src="img/logos/logo.svg" alt="logo icon">
+                    </a>
+                    <div class="header__titles">
+                        <h2 class="header-title">Грузоперевозки по РБ и РФ</h2>
+                        <h2 class="header-title">Переезды, вывоз мусора, услуги грузчиков</h2>
+                    </div>
+                </div>
+                <button class="burger"></button>
+            </div>
+            <div class="header__block">
+                <div class="header__info">
+                    <p class="weather info-item">+7</p>
+                    <p class="exchange info-item">$ 3,29</p>
+                </div>
+                <button class="popup-btn red-btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
     <main>
         <section class="pereezd">
             <div class="container pereezd__wrapper">
@@ -130,6 +154,52 @@
                     <button class="red-btn popup-btn">Заказать переезд</button>
                 </div>
                 <img class="pereezd-bg" src="img/pereezd/pereezd/bg.png" alt="">
+            </div>
+            <div class="burger-menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item active"><a href="index.html">Главная</a></li>
+                    <li class="menu__list-item service-menu-item">
+                        <a href="">Услуги</a>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Переезды</a></li>
+                                <li class="submenu__list-item"><a href="pereezd.html">Квартирный</a></li>
+                                <li class="submenu__list-item"><a href="">Дачный </a></li>
+                                <li class="submenu__list-item"><a href="">Офисный </a></li>
+                            </ul>
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Перевозка</a></li>
+                                <li class="submenu__list-item"><a href="">Мебели</a></li>
+                                <li class="submenu__list-item"><a href="">Сейфов</a></li>
+                                <li class="submenu__list-item"><a href="">Банкоматов</a></li>
+                                <li class="submenu__list-item"><a href="">Пианино</a></li>
+                                <li class="submenu__list-item"><a href="">Стройматериалов</a></li>
+                                <li class="submenu__list-item"><a href="">Перевозки по РБ</a></li>
+                                <li class="submenu__list-item"><a href="">Перевозки по РФ</a></li>
+                            </ul>
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Дополнительные услуги</a></li>
+                                <li class="submenu__list-item"><a href="">Грузовое такси</a></li>
+                                <li class="submenu__list-item"><a href="">Услуги грузчиков</a></li>
+                                <li class="submenu__list-item"><a href="">Такелажные работы</a></li>
+                                <li class="submenu__list-item"><a href="">Вывоз мусора</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__list-item"><a href="price.html">Цены</a></li>
+                    <li class="menu__list-item"><a href="reviews.html">Отзывы</a></li>
+                    <li class="menu__list-item"><a href="about.html">О компании</a></li>
+                    <li class="menu__list-item"><a href="contacts.html">Контакты</a></li>
+                    <a class="phone-btn" href="tel:+375296116670"><button>+375(29) 611 66 70</button></a>
+                    <div class="messengers">
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/telegram.svg" alt="telegram logo">
+                        </a>
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/viber.svg" alt="viber logo">
+                        </a>
+                    </div>
+                </ul>
             </div>
         </section>
 
@@ -171,26 +241,33 @@
         <section class="rates">
             <div class="container">
                 <h2 class="title rates-title">Тарифы и цены</h2>
-                <ul class="rates__tabs">
-                    <li class="rates__tab active" data-tab="#room-1">
+                <div class="rates__dropdown">
+                    <div class="rates__tab rates-trigger">
                         <p class="rates__tab-name">Студия / 1-комнатная</p>
                         <p class="rates__tab-price">от 65 руб</p>
-                    </li>
-                    <li class="rates__tab" data-tab="#room-2">
-                        <p class="rates__tab-name">2 - комнатная</p>
-                        <p class="rates__tab-price">от 70 руб</p>
-                    </li>
-                    <li class="rates__tab" data-tab="#room-3">
-                        <p class="rates__tab-name">3/4/5 - комнатная</p>
-                        <p class="rates__tab-price">от 80 руб</p>
-                    </li>
-                </ul>
+                    </div>
+                    <ul class="rates__tabs">
+                        <li class="rates__tab active" data-tab="#room-1">
+                            <p class="rates__tab-name">Студия / 1-комнатная</p>
+                            <p class="rates__tab-price">от 65 руб</p>
+                        </li>
+                        <li class="rates__tab" data-tab="#room-2">
+                            <p class="rates__tab-name">2 - комнатная</p>
+                            <p class="rates__tab-price">от 70 руб</p>
+                        </li>
+                        <li class="rates__tab" data-tab="#room-3">
+                            <p class="rates__tab-name">3/4/5 - комнатная</p>
+                            <p class="rates__tab-price">от 80 руб</p>
+                        </li>
+                    </ul>
+                </div>
                 <div class="rates__wrapper">
                     <div class="rates__content active" id="room-1">
                         <div class="rates__content__wrapper">
                             <div class="rates__content__block">
                                 <h3 class="title rates__content-title">Фургон</h3>
                                 <p class="rates__content-descr">К вам приедет фургон с четырехметровым кузовом. В кузов свободно помещается кухонная техника, диван/кровать.</p>
+                                <img class="rates__photo mobile" src="img/pereezd/rates/1-room.png" alt="">
                                 <div class="characters">
                                     <div class="characters__item">
                                         <p class="characters__item-name">Объём</p>
@@ -243,6 +320,7 @@
                             <div class="rates__content__block">
                                 <h3 class="title rates__content-title">Фургон</h3>
                                 <p class="rates__content-descr">К вам приедет фургон с четырехметровым кузовом. В кузов свободно помещается кухонная техника, диван/кровать.</p>
+                                <img class="rates__photo mobile" src="img/pereezd/rates/2-room.png" alt="">
                                 <div class="characters">
                                     <div class="characters__item">
                                         <p class="characters__item-name">Объём</p>
@@ -295,6 +373,7 @@
                             <div class="rates__content__block">
                                 <h3 class="title rates__content-title">Фургон</h3>
                                 <p class="rates__content-descr">К вам приедет фургон с четырехметровым кузовом. В кузов свободно помещается кухонная техника, диван/кровать.</p>
+                                <img class="rates__photo" src="img/pereezd/rates/3-room.png" alt="">
                                 <div class="characters">
                                     <div class="characters__item">
                                         <p class="characters__item-name">Объём</p>
@@ -514,6 +593,7 @@
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/phonemask.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/pereezd-page.js"></script>
 
 </body>
 </html>

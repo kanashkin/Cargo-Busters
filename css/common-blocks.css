@@ -179,10 +179,11 @@
         padding: 40px 0;
     }
     .boxes-bg {
-        display: block;
-        margin: 20px auto 0 auto;
-        position: static;
-        max-width: 100%;
+        display: block !important;
+        margin: 20px auto 0 auto !important;
+        position: static !important;
+        max-width: 100% !important;
+        height: 100% !important;
     }
     .consultation-form {
         margin-top: 10px;

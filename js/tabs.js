@@ -22,4 +22,4 @@ const tabs = (tabSelector, contentSelector) => {
 
 
 tabs('.services-tab', '.services-content__block')
-tabs('.rates__tab', '.rates__content')
+tabs('li.rates__tab', '.rates__content')

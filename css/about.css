@@ -150,6 +150,63 @@
     }
 }
 
+@media (max-width: 767px) {
+    .about {
+        padding: 40px 0;
+    }
+    .about__descr {
+        margin-top: 20px;
+    }
+    .about__descr-title {
+        font-size: 18px;
+    }
+    .about__descr-text {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .map__block {
+        height: 229px;
+    }
+    .city__item {
+        gap: 12px;
+    }
+    .city__item-name {
+        font-size: 24px;
+    }
+    .city__item-geo {
+        width: 40px;
+    }
+    .city__item.rb {
+        left: 20px;
+        top: 20px;
+    }
+    .city__item.rf {
+        right: 20px;
+        top: 30px;
+    }
+    .city__item.minsk {
+        bottom: 20px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .stat__wrapper {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat__block {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .stat__block-value {
+        font-size: 32px;
+    }
+    .stat__block-title {
+        font-size: 14px;
+    }
+}
+
 /* WHY SECTION */
 
 .why {
@@ -187,6 +244,19 @@
         max-width: 50%;
         height: auto;
         width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .why {
+        padding: 40px 0;
+    }
+    .why__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .why-image {
+        max-width: 100%;
     }
 }
 
@@ -248,6 +318,19 @@
     }
 }
 
+@media (max-width: 767px) {
+    .activity {
+        padding: 40px 0;
+    }
+    .activity__block {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .activity__block-image {
+        max-width: 40%;
+    }
+}
+
 /* CLIENTS SECTION */
 
 .clients {
@@ -272,6 +355,19 @@
     }
     .client-item {
         height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .clients {
+        padding: 40px 0;
+    }
+    .clients__wrapper {
+        gap: 30px;
+        row-gap: 20px;
+    }
+    .client-item {
+        height: 20px;
     }
 }
 
@@ -349,5 +445,22 @@
         border-radius: 20px;
         height: 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery {
+        padding: 40px 0;
+    }
+    .gallery-swiper {
+        margin-top: 20px;
+    }
+    .gallery-swiper .swiper-slide {
+        width: 280px !important;
+        height: 250px;
+    }
+    .gallery-popup {
+        padding: 0;
+        padding-top: 100px;
     }
 }
