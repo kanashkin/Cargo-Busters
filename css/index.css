@@ -399,13 +399,16 @@
     .services {
         padding: 60px 0 104px;
     }
-    .services-content__wrapper {
+    .services-content__wrapper,
+    .services__tabs__wrapper {
         overflow-x: auto;
     }
-    .services-content__wrapper::-webkit-scrollbar {
+    .services-content__wrapper::-webkit-scrollbar,
+    .services__tabs__wrapper::-webkit-scrollbar {
         display: none;
     }
-    .services-content__wrapper {
+    .services-content__wrapper,
+    .services__tabs__wrapper {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
@@ -416,6 +419,12 @@
     }
     .services-card {
         width: 359px;
+    }
+    .services__tabs {
+        max-width: fit-content;
+    }
+    .services-tab {
+        white-space: nowrap;
     }
 }
 
