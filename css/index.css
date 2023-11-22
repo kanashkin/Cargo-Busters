@@ -90,6 +90,12 @@
         background-position: top 100px center;
         background-size: 80%;
     }
+    .promo .container {
+        padding: 0;
+    }
+    .promo__content {
+        padding: 0 20px;
+    }
     .promo__wrapper {
         margin-top: 0;
         flex-direction: column;

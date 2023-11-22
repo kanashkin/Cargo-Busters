@@ -1,5 +1,5 @@
-const menuDropdown = () => {
-    const triggerBtns = document.querySelectorAll('.service-menu-item>a')
+const menuDropdown = (triggerSelector) => {
+    const triggerBtns = document.querySelectorAll(triggerSelector)
 
     triggerBtns.forEach(triggerBtn => {
         triggerBtn.addEventListener('click', e => {
@@ -11,7 +11,8 @@ const menuDropdown = () => {
     })
 }
 
-menuDropdown()
+menuDropdown('.service-menu-item>a')
+menuDropdown('.footer-service-title')
 
 const burgerMenu = () => {
     const triggerBtns = document.querySelectorAll('.burger')

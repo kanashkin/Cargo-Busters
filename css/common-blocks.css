@@ -342,6 +342,9 @@
     .reviews-swiper {
         margin-top: 20px;
     }
+    .review-btn {
+        margin-top: 20px;
+    }
 }
 
 /* CALC BLOCK */
@@ -620,5 +623,22 @@
 @media (max-width: 767px) {
     .calc {
         max-width: 100%;
+    }
+    .calc-form__block:first-child,
+    .calc-form__block:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .from__block,
+    .to__block,
+    .arrow__block,
+    .calc-form__block:last-child .input__block {
+        width: 100%;
+    }
+    .from__block {
+        border-radius: 10px 10px 0 0;
+    }
+    .to__block {
+        border-radius: 0 0 10px 10px;
     }
 }
