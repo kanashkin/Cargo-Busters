@@ -16,6 +16,7 @@ const ratesDropdown = () => {
                 let index = Array.from(textItems).indexOf(item)
                 triggerTextItems[index].textContent = item.textContent
             })
+            menu.classList.remove('active')
         }
     })
 }
