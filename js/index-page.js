@@ -2,6 +2,7 @@ const stockSwiper = new Swiper('.stock-swiper', {
     spaceBetween: 10,
     loop: true,
     slidesPerView: 4,
+    slidesPerGroup: 1,
     navigation: {
         nextEl: '.stock-swiper-right',
         prevEl: '.stock-swiper-left',
@@ -12,6 +13,7 @@ const autoSwiper = new Swiper('.auto-swiper', {
     spaceBetween: 10,
     loop: true,
     slidesPerView: 4,
+    slidesPerGroup: 1,
     navigation: {
         nextEl: '.auto-swiper-right',
         prevEl: '.auto-swiper-left',

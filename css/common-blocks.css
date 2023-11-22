@@ -169,6 +169,49 @@
         right: -34%;
         max-width: 75%;
     }
+    .consultation .form-input {
+        height: 42px;
+    }
+}
+
+@media (max-width: 767px) {
+    .consultation {
+        padding: 40px 0;
+    }
+    .boxes-bg {
+        display: block;
+        margin: 20px auto 0 auto;
+        position: static;
+        max-width: 100%;
+    }
+    .consultation-form {
+        margin-top: 10px;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 10px;
+    }
+    .consultation__content {
+        max-width: 100%;
+        padding: 0;
+    }
+    .consultation-form .form-input {
+        max-width: 100%;
+    }
+    .slogan {
+        font-size: 18px;
+    }
+    .consultation-title {
+        font-size: 32px;
+    }
+    .consultation-answer {
+        font-size: 16px;
+    }
+    .consultation-big .consultation__content {
+        max-width: 100%;
+    }
+    .consultation-man {
+        top: 40px;
+    }
 }
 
 /* REVIEWS SECTION */
@@ -266,6 +309,38 @@
     }
     .review-btn {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews {
+        padding: 40px 0;
+    }
+    .reviews-title {
+        text-align: left;
+    }
+    .review-card {
+        padding: 20px;
+        width: 280px !important;
+        height: 325px;
+    }
+    .review-card-ava {
+        width: 58px;
+    }
+    .review-card__top {
+        gap: 10px;
+    }
+    .review-card-title {
+        font-size: 18px;
+    }
+    .review-card-text {
+        font-size: 16px;
+    }
+    .review-card-name {
+        font-size: 18px;
+    }
+    .reviews-swiper {
+        margin-top: 20px;
     }
 }
 
@@ -539,5 +614,11 @@
     }
     .calc-top {
         padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calc {
+        max-width: 100%;
     }
 }

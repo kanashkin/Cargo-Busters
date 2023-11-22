@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header header-desktop">
         <div class="header__wrapper container">
             <div class="header__block-left">
                 <a href="index.html" class="logo">
@@ -32,7 +32,7 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item"><a href="index.html">Главная</a></li>
+                            <li class="menu__list-item active"><a href="index.html">Главная</a></li>
                             <li class="menu__list-item service-menu-item">
                                 <a href="">Услуги</a>
                                 <div class="submenu">
@@ -82,14 +82,95 @@
         </div>
     </header>
 
+    <header class="header header-tablet">
+        <div class="header__wrapper container">
+            <a href="index.html" class="logo">
+                <img src="img/logos/logo.svg" alt="logo icon">
+            </a>
+            <div class="header__content">
+                <div class="header__top">
+                    <div class="header__titles">
+                        <h2 class="header-title">Грузоперевозки по РБ и РФ</h2>
+                        <h2 class="header-title">Переезды, вывоз мусора, услуги грузчиков</h2>
+                    </div>
+                    <div class="messengers">
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/telegram.svg" alt="telegram logo">
+                        </a>
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/viber.svg" alt="viber logo">
+                        </a>
+                    </div>
+                    <div class="header__info">
+                        <p class="weather info-item">+7</p>
+                        <p class="exchange info-item">$ 3,29</p>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__buttons">
+                        <a class="phone-btn" href="tel:+375296116670"><button>+375(29) 611 66 70</button></a>
+                        <button class="popup-btn red-btn">Заказать звонок</button>
+                    </div>
+                    <button class="burger"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main>
         <section class="error">
             <div class="container error__wrapper">
                 <div class="error__block">
-                    <h1 class="title">Страница не найдена</h1>
+                    <h1 class="title error-title">Страница не найдена</h1>
                     <p class="error-descr">Запрашиваемая страница не найдена, возможна она устарела или была удалена.</p>
                     <a href="index.html" class="error-btn"><button class="red-btn">Вернуться на главную</button></a>
                 </div>
+            </div>
+            <div class="burger-menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item active"><a href="index.html">Главная</a></li>
+                    <li class="menu__list-item service-menu-item">
+                        <a href="">Услуги</a>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Переезды</a></li>
+                                <li class="submenu__list-item"><a href="pereezd.html">Квартирный</a></li>
+                                <li class="submenu__list-item"><a href="">Дачный </a></li>
+                                <li class="submenu__list-item"><a href="">Офисный </a></li>
+                            </ul>
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Перевозка</a></li>
+                                <li class="submenu__list-item"><a href="">Мебели</a></li>
+                                <li class="submenu__list-item"><a href="">Сейфов</a></li>
+                                <li class="submenu__list-item"><a href="">Банкоматов</a></li>
+                                <li class="submenu__list-item"><a href="">Пианино</a></li>
+                                <li class="submenu__list-item"><a href="">Стройматериалов</a></li>
+                                <li class="submenu__list-item"><a href="">Перевозки по РБ</a></li>
+                                <li class="submenu__list-item"><a href="">Перевозки по РФ</a></li>
+                            </ul>
+                            <ul class="submenu__list">
+                                <li class="submenu__list-item title-item"><a href="">Дополнительные услуги</a></li>
+                                <li class="submenu__list-item"><a href="">Грузовое такси</a></li>
+                                <li class="submenu__list-item"><a href="">Услуги грузчиков</a></li>
+                                <li class="submenu__list-item"><a href="">Такелажные работы</a></li>
+                                <li class="submenu__list-item"><a href="">Вывоз мусора</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__list-item"><a href="price.html">Цены</a></li>
+                    <li class="menu__list-item"><a href="reviews.html">Отзывы</a></li>
+                    <li class="menu__list-item"><a href="about.html">О компании</a></li>
+                    <li class="menu__list-item"><a href="contacts.html">Контакты</a></li>
+                    <a class="phone-btn" href="tel:+375296116670"><button>+375(29) 611 66 70</button></a>
+                    <div class="messengers">
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/telegram.svg" alt="telegram logo">
+                        </a>
+                        <a class="messenger-icon" href="">
+                            <img src="img/logos/viber.svg" alt="viber logo">
+                        </a>
+                    </div>
+                </ul>
             </div>
         </section>
     </main>
@@ -103,36 +184,41 @@
                     </a>
                     <button class="popup-btn red-btn">Оставить заявку</button>
                     <p class="footer-promise footer-info-item">Перезвоним в течении 15 минут </p>
+                    <a class="footer-call" href="tel:+375296116670">
+                        <img src="img/logos/phone-big.svg" alt="big phone icon">
+                    </a>
                 </div>
-                <nav class="footer-menu footer-margin">
-                    <ul class="footer-menu__list">
-                        <li class="footer-title">Компания</li>
-                        <li class="footer-menu__list-item"><a href="">Главная</a></li>
-                        <li class="footer-menu__list-item"><a href="">Цены</a></li>
-                        <li class="footer-menu__list-item"><a href="">Отзывы</a></li>
-                        <li class="footer-menu__list-item"><a href="">О компании</a></li>
-                        <li class="footer-menu__list-item"><a href="">Контакты</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-services footer-margin">
-                    <p class="footer-title">Услуги</p>
-                    <ul class="footer-services__list">
-                        <li class="footer-services__list-item"><a href="">грузовое такси</a></li>
-                        <li class="footer-services__list-item"><a href="">квартирный переезд</a></li>
-                        <li class="footer-services__list-item"><a href="">дачный переезд</a></li>
-                        <li class="footer-services__list-item"><a href="">офисный переезд</a></li>
-                        <li class="footer-services__list-item"><a href="">перевозка мебели</a></li>
-                        <li class="footer-services__list-item"><a href="">услуги грузчиков</a></li>
-                        <li class="footer-services__list-item"><a href="">перевозка сейфов</a></li>
-                        <li class="footer-services__list-item"><a href="">перевозка банкоматов</a></li>
-                        <li class="footer-services__list-item"><a href="">перевозка пианино</a></li>
-                        <li class="footer-services__list-item"><a href="">такелажные работы</a></li>
-                        <li class="footer-services__list-item"><a href="">вывоз мусора</a></li>
-                        <li class="footer-services__list-item"><a href="">перевозка стройматериалов</a></li>
-                        <li class="footer-services__list-item"><a href=""></a>перевозки по РБ</li>
-                        <li class="footer-services__list-item"><a href=""></a>перевозки по РФ</li>
-                    </ul>
-                </nav>
+                <div class="footer__navs">
+                    <nav class="footer-menu footer-margin">
+                        <ul class="footer-menu__list">
+                            <li class="footer-title">Компания</li>
+                            <li class="footer-menu__list-item"><a href="">Главная</a></li>
+                            <li class="footer-menu__list-item"><a href="">Цены</a></li>
+                            <li class="footer-menu__list-item"><a href="">Отзывы</a></li>
+                            <li class="footer-menu__list-item"><a href="">О компании</a></li>
+                            <li class="footer-menu__list-item"><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-services footer-margin">
+                        <p class="footer-title">Услуги</p>
+                        <ul class="footer-services__list">
+                            <li class="footer-services__list-item"><a href="">грузовое такси</a></li>
+                            <li class="footer-services__list-item"><a href="">квартирный переезд</a></li>
+                            <li class="footer-services__list-item"><a href="">дачный переезд</a></li>
+                            <li class="footer-services__list-item"><a href="">офисный переезд</a></li>
+                            <li class="footer-services__list-item"><a href="">перевозка мебели</a></li>
+                            <li class="footer-services__list-item"><a href="">услуги грузчиков</a></li>
+                            <li class="footer-services__list-item"><a href="">перевозка сейфов</a></li>
+                            <li class="footer-services__list-item"><a href="">перевозка банкоматов</a></li>
+                            <li class="footer-services__list-item"><a href="">перевозка пианино</a></li>
+                            <li class="footer-services__list-item"><a href="">такелажные работы</a></li>
+                            <li class="footer-services__list-item"><a href="">вывоз мусора</a></li>
+                            <li class="footer-services__list-item"><a href="">перевозка стройматериалов</a></li>
+                            <li class="footer-services__list-item"><a href=""></a>перевозки по РБ</li>
+                            <li class="footer-services__list-item"><a href=""></a>перевозки по РФ</li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="footer-contacts footer-margin">
                     <p class="footer-title">Наши контакты</p>
                     <ul class="footer-contacts__list">

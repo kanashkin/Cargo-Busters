@@ -27,3 +27,23 @@
 .error-btn {
     margin-top: 40px;
 }
+
+@media (max-width: 1200px) {
+    .error {
+        height: 443px;
+        background-size: contain;
+        background-position: left center;
+    }
+    .error__block {
+        max-width: 338px;
+    }
+    .error-title {
+        font-size: 40px !important; 
+    }
+    .error-descr {
+        margin-top: 16px;
+    }
+    .error-btn {
+        margin-top: 20px;
+    }
+}

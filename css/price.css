@@ -29,6 +29,15 @@
     max-width: 100%;
 }
 
+@media (max-width: 1200px) {
+    .price-promo {
+        padding: 60px 0;
+    }
+    .price-promo-descr {
+        font-size: 24px;
+    }
+}
+
 /* FACTORS SECTION */
 
 .factors {
@@ -88,6 +97,75 @@
     font-weight: 700;
     font-family: inherit;
     font-size: inherit;
+}
+
+.factors-bg {
+    min-width: 602px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.factors-bg img {
+    position: absolute;
+    right: 0;
+}
+
+.factors .text-banner {
+    display: none;
+}
+
+.factors-bg .text-banner {
+    display: block;
+}
+
+.factors .text-banner {
+    border-radius: 20px;
+    background: #303030;
+    padding: 20px;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    max-width: 75%;
+}
+
+@media (max-width: 1200px) {
+    .factors {
+        padding: 60px 0;
+    }
+    .factors__wrapper {
+        align-items: center;
+    }
+    .factors-bg {
+        min-width: 200px;
+    }
+    .text-banner {
+        font-size: 24px !important;
+    }
+    .factors .text-banner {
+        display: block;
+    }
+    .factors-bg .text-banner {
+        display: none;
+    }
+    .factors-bg img {
+        max-width: 100%;
+        position: static;
+    }
+    .factors__list {
+        padding-top: 20px;
+        gap: 40px;
+    }
+    .factors__list-item-title {
+        font-size: 24px;
+    }
+    .factors__list-item-text {
+        font-size: 16px;
+    }
 }
 
 /* PRICE SECTION */
@@ -225,6 +303,36 @@
     height: 234px;
 }
 
+@media (max-width: 1200px) {
+    .price {
+        padding: 60px 0;
+    }
+    .price__card {
+        padding: 20px;
+    }
+    .price__card-title {
+        font-size: 24px;
+    }
+    .price__card-subtitle {
+        font-size: 20px;
+    }
+    .price-line-value {
+        font-size: 16px;
+    }
+    .loader__card .price__card {
+        max-height: 254px;
+        align-items: flex-start;
+    }
+    .loader__card .title {
+        max-width: 359px;
+    }
+    .loader-photo {
+        width: 160px;
+        height: 194px;
+        right: 0;
+    }
+}
+
 /* CALCULATOR SECTION */
 
 .calculator {
@@ -245,4 +353,16 @@
 
 .calc {
     margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .calculator {
+        padding: 30px 0 60px;
+    }
+    .calculator-planet {
+        max-width: 40%;
+    }
+    .calculator-title {
+        font-size: 40px !important;
+    }
 }

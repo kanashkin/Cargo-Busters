@@ -119,6 +119,30 @@
         </div>
     </header>
 
+    <header class="header header-mobile">
+        <div class="header__wrapper container">
+            <div class="header__block">
+                <div class="header__logo__block">
+                    <a href="index.html" class="logo">
+                        <img src="img/logos/logo.svg" alt="logo icon">
+                    </a>
+                    <div class="header__titles">
+                        <h2 class="header-title">Грузоперевозки по РБ и РФ</h2>
+                        <h2 class="header-title">Переезды, вывоз мусора, услуги грузчиков</h2>
+                    </div>
+                </div>
+                <button class="burger"></button>
+            </div>
+            <div class="header__block">
+                <div class="header__info">
+                    <p class="weather info-item">+7</p>
+                    <p class="exchange info-item">$ 3,29</p>
+                </div>
+                <button class="popup-btn red-btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
     <main>
         <section class="promo">
             <div class="container title-tablets">
@@ -284,12 +308,14 @@
             </div>
         </section>
         <section class="services">
-            <h2 class="title services-title">Наши популярные услуги</h2>
-            <ul class="services__tabs">
-                <li class="services-tab active" data-tab="#moving">Переезды</li>
-                <li class="services-tab" data-tab="#transportation">Перевозки</li>
-                <li class="services-tab" data-tab="#taxi">Грузовое такси</li>
-            </ul>
+            <div class="container">
+                <h2 class="title services-title">Наши популярные услуги</h2>
+                <ul class="services__tabs">
+                    <li class="services-tab active" data-tab="#moving">Переезды</li>
+                    <li class="services-tab" data-tab="#transportation">Перевозки</li>
+                    <li class="services-tab" data-tab="#taxi">Грузовое такси</li>
+                </ul>
+            </div>
             <div class="services-content__wrapper">
                 <div class="services-content__block active" id="moving">
                     <div class="services-card">
@@ -542,7 +568,6 @@
         <section class="loader-coast">
             <div class="container">
                 <h2 class="title loader-coast-title">Стоимость 1 грузчика</h2>
-                <img class="loader-coast-bg" src="img/index/loader-coast/bg.png" alt="">
                 <div class="loader__info">
                     <div class="loader__circle black">
                         <p class="loader__circle-value">за 2 часа</p>
@@ -551,6 +576,7 @@
                         <p class="loader__circle-value">от 20 руб</p>
                     </div>
                 </div>
+                <img class="loader-coast-bg" src="img/index/loader-coast/bg.png" alt="">
             </div>
         </section>
         <section class="consultation black">
@@ -679,7 +705,7 @@
             <img class="consultation-man" src="img/common-blocks/consultation-man.png" alt="">
         </section>
         <section class="reviews">
-            <h2 class="title reviews-title">Отзывы наших клиентов</h2>
+            <h2 class="title container reviews-title">Отзывы наших клиентов</h2>
             <div class="swiper reviews-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide review-card">

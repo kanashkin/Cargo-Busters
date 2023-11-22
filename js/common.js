@@ -13,6 +13,20 @@ const menuDropdown = () => {
 
 menuDropdown()
 
+const burgerMenu = () => {
+    const triggerBtns = document.querySelectorAll('.burger')
+    const menu = document.querySelector('.burger-menu')
+
+    triggerBtns.forEach(triggerBtn => {
+        triggerBtn.onclick = function() {
+            menu.classList.toggle('active')
+            triggerBtn.classList.toggle('active')
+        }
+    })
+}
+
+burgerMenu()
+
 const openPopup = () => {
     const triggerBtns = document.querySelectorAll('.popup-btn')
     const overlay = document.querySelector('.overlay')
@@ -156,16 +170,3 @@ try {
     calc()
     selectOptions()
 } catch {}
-
-
-const burgerMenu = () => {
-    const triggerBtn = document.querySelector('.burger')
-    const menu = document.querySelector('.burger-menu')
-
-    triggerBtn.onclick = function() {
-        menu.classList.toggle('active')
-        triggerBtn.classList.toggle('active')
-    }
-}
-
-burgerMenu()

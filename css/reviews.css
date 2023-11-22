@@ -143,3 +143,20 @@
     color: #C21B22;
     font-family: inherit;
 }
+
+
+@media (max-width: 1200px) {
+    .review {
+        padding: 60px 0 40px;
+    }
+    .review__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .review-form__block {
+        max-width: 100%;
+    }
+    .review-title {
+        font-size: 40px !important;
+    }
+}
