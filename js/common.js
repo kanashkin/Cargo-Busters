@@ -75,6 +75,8 @@ try {
 
 $(function() {
     try {
+        let input = $('.data-value')
+        input.next().val(input.val())
         $('.data-input').daterangepicker({
             singleDatePicker: true,
             locale: {
@@ -86,7 +88,8 @@ $(function() {
                 monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
             }
         }, function(start, end, label) {
-            $('.data-value').val(start.format('DD.MM.YYYY'));
+            input.val(start.format('DD.MM.YYYY'));
+            input.next().val(input.val())
         }
         );
     } catch {}
@@ -98,6 +101,9 @@ const selectOptions = () => {
     const menuList = document.querySelector('.options__list')
     const menuListItems = document.querySelectorAll('.options__list-item')
     const optionsField = document.querySelector('.options-field')
+
+    let hideInput = optionsField.nextElementSibling
+    hideInput.value = optionsField.value
 
     openTrigger.onclick = function() {
         menuList.classList.add('active')
@@ -125,6 +131,7 @@ const selectOptions = () => {
                     itemsArr.push(item.textContent)
                 })
                 optionsField.value = itemsArr.join()
+                hideInput.value = optionsField.value
             }
         }
     })
@@ -150,15 +157,24 @@ const calc = () => {
         const minusBtn = document.querySelector('.calc-minus')
         const plusBtn = document.querySelector('.calc-plus')
 
+        const changeHideInput = () => {
+            let hideInput = amountInput.nextElementSibling
+            hideInput.value = amountInput.value
+        }
+
+        changeHideInput()
+
         minusBtn.addEventListener('click', () => {
             if (amountInput.value > 0) {
                 amountInput.value --
+                changeHideInput()
             }
         })
 
         plusBtn.addEventListener('click', () => {
             if (amountInput.value < 20) {
                 amountInput.value ++
+                changeHideInput()
             }
         })
     }
@@ -170,4 +186,4 @@ const calc = () => {
 try {
     calc()
     selectOptions()
-} catch {}
+} catch(e) {console.log(e);}
